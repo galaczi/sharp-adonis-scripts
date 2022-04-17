@@ -1,0 +1,10 @@
+@entryPointStyles('app')
+@entryPointScripts('app')
+  <form action="{{route('edit.upload')}}" method="post" enctype="multipart/form-data">
+    {{--  {{ csrfField() }}  --}}
+    <input type="file" name="featuredImage" id="featuredImage">
+    <input type="submit" value="Upload">
+  </form>
+
+  <p>After submission you should be redirected to home page.</p>
+
